@@ -1,4 +1,5 @@
 format = """
+<<<<<<< HEAD
 [](#E97451)\
 [](bg:#E97451 fg:#702963)\
 [](bg:#CC5500 fg:#E97451)\
@@ -7,10 +8,21 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#D27D2D bg:#B87333)\
+=======
+[](#E97451)\
+[  ](bg:#E97451 fg:#362d29)\
+[](bg:#CC5500 fg:#E97451)\
+$directory\
+[](fg:#CC5500 bg:#D27D2D)\
+$git_branch\
+$git_status\
+[](fg:#D27D2D bg:#B87333)\
+>>>>>>> 9813d71 (added starshiprs config)
 $nodejs\
 $rust\
 $golang\
 $php\
+<<<<<<< HEAD
 [](fg:#B87333 bg:#8B4000)\
 $time\
 [ ](fg:#8B4000)\
@@ -18,6 +30,14 @@ $time\
 
 [directory]
 style = "fg:#36454F bg:#CC5500"
+=======
+[](fg:#B87333 bg:#8B4000)\
+$time\
+[ ](fg:#8B4000)\
+"""
+[directory]
+style = "fg:#362d29 bg:#CC5500"
+>>>>>>> 9813d71 (added starshiprs config)
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -31,36 +51,64 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:#D27D2D"
+<<<<<<< HEAD
 format = '[[ $symbol $branch ](fg:#36454F bg:#D27D2D)]($style)'
 
 [git_status]
 style = "bg:#D27D2D"
 format = '[[($all_status$ahead_behind )](fg:#36454F bg:#D27D2D)]($style)'
+=======
+format = '[[ $symbol $branch ](fg:#362d29 bg:#D27D2D)]($style)'
+
+[git_status]
+style = "bg:#D27D2D"
+format = '[[($all_status$ahead_behind )](fg:#362d29 bg:#D27D2D)]($style)'
+>>>>>>> 9813d71 (added starshiprs config)
 
 [nodejs]
 symbol = ""
 style = "bg:#B87333"
+<<<<<<< HEAD
 format = '[[ $symbol ($version) ](fg:#36454F bg:#B87333)]($style)'
+=======
+format = '[[ $symbol ($version) ](fg:#362d29 bg:#B87333)]($style)'
+>>>>>>> 9813d71 (added starshiprs config)
 
 [rust]
 symbol = ""
 style = "bg:#B87333"
+<<<<<<< HEAD
 format = '[[ $symbol ($version) ](fg:#36454F bg:#B87333)]($style)'
+=======
+format = '[[ $symbol ($version) ](fg:#362d29 bg:#B87333)]($style)'
+>>>>>>> 9813d71 (added starshiprs config)
 
 [golang]
 symbol = ""
 style = "bg:#B87333"
+<<<<<<< HEAD
 format = '[[ $symbol ($version) ](fg:#36454F bg:#B87333)]($style)'
+=======
+format = '[[ $symbol ($version) ](fg:#362d29 bg:#B87333)]($style)'
+>>>>>>> 9813d71 (added starshiprs config)
 
 [php]
 symbol = ""
 style = "bg:#B87333"
+<<<<<<< HEAD
 format = '[[ $symbol ($version) ](fg:#36454F bg:#B87333)]($style)'
+=======
+format = '[[ $symbol ($version) ](fg:#362d29 bg:#B87333)]($style)'
+>>>>>>> 9813d71 (added starshiprs config)
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#8B4000"
+<<<<<<< HEAD
 format = '[[  $time ](fg:#36454F bg:#8B4000)]($style)'
 
 
+=======
+format = '[[  $time ](fg:#362d29 bg:#8B4000)]($style)'
+>>>>>>> 9813d71 (added starshiprs config)
